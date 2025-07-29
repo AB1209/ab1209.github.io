@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fastest Finger First</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #68c1e7;
+      --accent: #1c2933;
+      --bg: #10171d;
+      --card-bg: #16222b;
+      --text: #fff;
+      --heading: #68c1e7;
+      --border-radius: 18px;
+      --shadow: 0 4px 16px rgba(0,0,0,0.18);
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      border: 2px solid var(--primary);
+      max-width: 400px;
+      width: 95vw;
+      margin: 40px auto;
+      padding: 32px 22px 28px 22px;
+      text-align: center;
+      position: relative;
+    }
+    .app-logo {
+      width: 78px;
+      height: 78px;
+      border-radius: 16px;
+      border: 4px solid var(--primary);
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(104,193,231,.18);
+      margin-bottom: 16px;
+      object-fit: contain;
+    }
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      color: var(--heading);
+      font-weight: 700;
+      letter-spacing: .5px;
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 2em;
+      font-size: 1.12em;
+      color: #e8f8ff;
+    }
+    .main-btn {
+      margin: 8px 0;
+      display: block;
+      width: 100%;
+      font-size: 1.07em;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--primary);
+      border: none;
+      border-radius: 12px;
+      padding: 14px 0;
+      transition: background 0.17s;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(104,193,231,.12);
+    }
+    .main-btn:hover { background: #49b6e1; }
+    .footer-links {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7em;
+      opacity: .85;
+    }
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.15s;
+      word-break: break-all;
+    }
+    .footer-links a:hover { color: #fff; }
+    @media (max-width: 600px) {
+      .main-card { padding: 18px 3vw 16px 3vw; }
+      .app-logo { width: 60px; height: 60px; }
+      h1 { font-size: 1.4rem; }
+      p { font-size: 0.99em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-card">
+    <img src="icon_512.jpg" class="app-logo" alt="Fastest Finger First Logo">
+    <h1>Fastest Finger First</h1>
+    <p>
+      Challenge your reflexes! Press the correct option faster than your friends in this fun, fast-paced quiz app.
+    </p>
+    <!-- Example call to action button -->
+    <button class="main-btn" onclick="window.location.href='https://play.google.com/store/apps/details?id=YOUR_APP_ID'">Download on Google Play</button>
+
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:arunbadole1209@gmail.com">Contact Support</a>
+    </div>
+  </div>
+</body>
+</html>
